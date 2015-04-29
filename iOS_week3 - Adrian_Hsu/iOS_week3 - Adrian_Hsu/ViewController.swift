@@ -13,27 +13,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var rSlider: UISlider!
+    @IBOutlet weak var gSlider: UISlider!
+    @IBOutlet weak var bSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func doChange(sender: AnyObject) {
         
-        var slider = sender as! UISlider
-        
         var color = UIColor(
-            red: CGFloat(slider.value),
-            green: 0,
-            blue: 0,
+            red: CGFloat(rSlider.value),
+            green: CGFloat(gSlider.value),
+            blue: CGFloat(bSlider.value),
             alpha: 1)
         
         self.view.backgroundColor = color
+        
     }
 }
-

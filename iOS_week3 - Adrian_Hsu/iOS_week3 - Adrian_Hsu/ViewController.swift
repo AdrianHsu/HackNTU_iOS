@@ -23,7 +23,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    @IBAction func doChange(sender: AnyObject) {
+        
+        var slider = sender as! UISlider
+        
+        var color = UIColor(
+            red: CGFloat(slider.value),
+            green: 0,
+            blue: 0,
+            alpha: 1)
+        
+        self.view.backgroundColor = color
+    }
 }
 

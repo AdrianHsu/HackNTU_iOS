@@ -11,6 +11,7 @@
 // 標題：[HackCourse] iOS week3 - 姓名
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     @IBOutlet weak var rSlider: UISlider!
@@ -34,6 +35,9 @@ class ViewController: UIViewController {
             alpha: 1)
         
         self.view.backgroundColor = color
-        
     }
 }
+convenience init() test
+
+
+

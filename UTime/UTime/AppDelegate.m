@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
-//
+
 @interface AppDelegate ()
 
 @end

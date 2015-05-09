@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F79BFEC1AFE6B1200FA8D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79BFEB1AFE6B1200FA8D4A /* AppDelegate.swift */; };
+		7F79BFEF1AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F79BFED1AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsu.xcdatamodeld */; };
+		7F79BFF11AFE6B1200FA8D4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79BFF01AFE6B1200FA8D4A /* ViewController.swift */; };
+		7F79BFF41AFE6B1200FA8D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F79BFF21AFE6B1200FA8D4A /* Main.storyboard */; };
+		7F79BFF61AFE6B1200FA8D4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F79BFF51AFE6B1200FA8D4A /* Images.xcassets */; };
+		7F79BFF91AFE6B1200FA8D4A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F79BFF71AFE6B1200FA8D4A /* LaunchScreen.xib */; };
+		7F79C0051AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79C0041AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsuTests.swift */; };
+		7F79C00E1AFE720700FA8D4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79BFF01AFE6B1200FA8D4A /* ViewController.swift */; };
+		7F79C0101AFE78AB00FA8D4A /* Line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F79C00F1AFE78AB00FA8D4A /* Line.png */; };
+		7F79C0121AFE7B0700FA8D4A /* Oval 69.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F79C0111AFE7B0700FA8D4A /* Oval 69.png */; };
+		7F79C0161AFE833400FA8D4A /* PaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79C0151AFE833400FA8D4A /* PaletteViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F79BFFF1AFE6B1200FA8D4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F79BFDE1AFE6B1200FA8D4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F79BFE51AFE6B1200FA8D4A;
+			remoteInfo = "[HackCourse] iOS week3 - AdrianHsu";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F79BFE61AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[HackCourse] iOS week3 - AdrianHsu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F79BFEA1AFE6B1200FA8D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F79BFEB1AFE6B1200FA8D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F79BFEE1AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "_HackCourse__iOS_week3___AdrianHsu.xcdatamodel"; sourceTree = "<group>"; };
+		7F79BFF01AFE6B1200FA8D4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F79BFF31AFE6B1200FA8D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F79BFF51AFE6B1200FA8D4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7F79BFF81AFE6B1200FA8D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7F79BFFE1AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "[HackCourse] iOS week3 - AdrianHsuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F79C0031AFE6B1200FA8D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F79C0041AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_HackCourse__iOS_week3___AdrianHsuTests.swift"; sourceTree = "<group>"; };
+		7F79C00F1AFE78AB00FA8D4A /* Line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Line.png; sourceTree = "<group>"; };
+		7F79C0111AFE7B0700FA8D4A /* Oval 69.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Oval 69.png"; sourceTree = "<group>"; };
+		7F79C0151AFE833400FA8D4A /* PaletteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaletteViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F79BFE31AFE6B1200FA8D4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F79BFFB1AFE6B1200FA8D4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F79BFDD1AFE6B1200FA8D4A = {
+			isa = PBXGroup;
+			children = (
+				7F79BFE81AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsu */,
+				7F79C0011AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsuTests */,
+				7F79BFE71AFE6B1200FA8D4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F79BFE71AFE6B1200FA8D4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F79BFE61AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsu.app */,
+				7F79BFFE1AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F79BFE81AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsu */ = {
+			isa = PBXGroup;
+			children = (
+				7F79BFEB1AFE6B1200FA8D4A /* AppDelegate.swift */,
+				7F79BFF01AFE6B1200FA8D4A /* ViewController.swift */,
+				7F79C0151AFE833400FA8D4A /* PaletteViewController.swift */,
+				7F79BFF21AFE6B1200FA8D4A /* Main.storyboard */,
+				7F79BFF51AFE6B1200FA8D4A /* Images.xcassets */,
+				7F79BFF71AFE6B1200FA8D4A /* LaunchScreen.xib */,
+				7F79BFED1AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsu.xcdatamodeld */,
+				7F79C00F1AFE78AB00FA8D4A /* Line.png */,
+				7F79C0111AFE7B0700FA8D4A /* Oval 69.png */,
+				7F79BFE91AFE6B1200FA8D4A /* Supporting Files */,
+			);
+			path = "[HackCourse] iOS week3 - AdrianHsu";
+			sourceTree = "<group>";
+		};
+		7F79BFE91AFE6B1200FA8D4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F79BFEA1AFE6B1200FA8D4A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F79C0011AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsuTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F79C0041AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsuTests.swift */,
+				7F79C0021AFE6B1200FA8D4A /* Supporting Files */,
+			);
+			path = "[HackCourse] iOS week3 - AdrianHsuTests";
+			sourceTree = "<group>";
+		};
+		7F79C0021AFE6B1200FA8D4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F79C0031AFE6B1200FA8D4A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F79BFE51AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F79C0081AFE6B1200FA8D4A /* Build configuration list for PBXNativeTarget "[HackCourse] iOS week3 - AdrianHsu" */;
+			buildPhases = (
+				7F79BFE21AFE6B1200FA8D4A /* Sources */,
+				7F79BFE31AFE6B1200FA8D4A /* Frameworks */,
+				7F79BFE41AFE6B1200FA8D4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "[HackCourse] iOS week3 - AdrianHsu";
+			productName = "[HackCourse] iOS week3 - AdrianHsu";
+			productReference = 7F79BFE61AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F79BFFD1AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F79C00B1AFE6B1200FA8D4A /* Build configuration list for PBXNativeTarget "[HackCourse] iOS week3 - AdrianHsuTests" */;
+			buildPhases = (
+				7F79BFFA1AFE6B1200FA8D4A /* Sources */,
+				7F79BFFB1AFE6B1200FA8D4A /* Frameworks */,
+				7F79BFFC1AFE6B1200FA8D4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F79C0001AFE6B1200FA8D4A /* PBXTargetDependency */,
+			);
+			name = "[HackCourse] iOS week3 - AdrianHsuTests";
+			productName = "[HackCourse] iOS week3 - AdrianHsuTests";
+			productReference = 7F79BFFE1AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F79BFDE1AFE6B1200FA8D4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = AdrianHsu;
+				TargetAttributes = {
+					7F79BFE51AFE6B1200FA8D4A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					7F79BFFD1AFE6B1200FA8D4A = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 7F79BFE51AFE6B1200FA8D4A;
+					};
+				};
+			};
+			buildConfigurationList = 7F79BFE11AFE6B1200FA8D4A /* Build configuration list for PBXProject "[HackCourse] iOS week3 - AdrianHsu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F79BFDD1AFE6B1200FA8D4A;
+			productRefGroup = 7F79BFE71AFE6B1200FA8D4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F79BFE51AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsu */,
+				7F79BFFD1AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F79BFE41AFE6B1200FA8D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F79BFF41AFE6B1200FA8D4A /* Main.storyboard in Resources */,
+				7F79BFF91AFE6B1200FA8D4A /* LaunchScreen.xib in Resources */,
+				7F79BFF61AFE6B1200FA8D4A /* Images.xcassets in Resources */,
+				7F79C0101AFE78AB00FA8D4A /* Line.png in Resources */,
+				7F79C0121AFE7B0700FA8D4A /* Oval 69.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F79BFFC1AFE6B1200FA8D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F79BFE21AFE6B1200FA8D4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F79C0161AFE833400FA8D4A /* PaletteViewController.swift in Sources */,
+				7F79BFF11AFE6B1200FA8D4A /* ViewController.swift in Sources */,
+				7F79BFEC1AFE6B1200FA8D4A /* AppDelegate.swift in Sources */,
+				7F79BFEF1AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsu.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F79BFFA1AFE6B1200FA8D4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F79C00E1AFE720700FA8D4A /* ViewController.swift in Sources */,
+				7F79C0051AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F79C0001AFE6B1200FA8D4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F79BFE51AFE6B1200FA8D4A /* [HackCourse] iOS week3 - AdrianHsu */;
+			targetProxy = 7F79BFFF1AFE6B1200FA8D4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F79BFF21AFE6B1200FA8D4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F79BFF31AFE6B1200FA8D4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F79BFF71AFE6B1200FA8D4A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F79BFF81AFE6B1200FA8D4A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F79C0061AFE6B1200FA8D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F79C0071AFE6B1200FA8D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F79C0091AFE6B1200FA8D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "[HackCourse] iOS week3 - AdrianHsu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7F79C00A1AFE6B1200FA8D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "[HackCourse] iOS week3 - AdrianHsu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7F79C00C1AFE6B1200FA8D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "[HackCourse] iOS week3 - AdrianHsuTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/[HackCourse] iOS week3 - AdrianHsu.app/[HackCourse] iOS week3 - AdrianHsu";
+			};
+			name = Debug;
+		};
+		7F79C00D1AFE6B1200FA8D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "[HackCourse] iOS week3 - AdrianHsuTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/[HackCourse] iOS week3 - AdrianHsu.app/[HackCourse] iOS week3 - AdrianHsu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F79BFE11AFE6B1200FA8D4A /* Build configuration list for PBXProject "[HackCourse] iOS week3 - AdrianHsu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F79C0061AFE6B1200FA8D4A /* Debug */,
+				7F79C0071AFE6B1200FA8D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F79C0081AFE6B1200FA8D4A /* Build configuration list for PBXNativeTarget "[HackCourse] iOS week3 - AdrianHsu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F79C0091AFE6B1200FA8D4A /* Debug */,
+				7F79C00A1AFE6B1200FA8D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7F79C00B1AFE6B1200FA8D4A /* Build configuration list for PBXNativeTarget "[HackCourse] iOS week3 - AdrianHsuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F79C00C1AFE6B1200FA8D4A /* Debug */,
+				7F79C00D1AFE6B1200FA8D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F79BFED1AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsu.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F79BFEE1AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsu.xcdatamodel */,
+			);
+			currentVersion = 7F79BFEE1AFE6B1200FA8D4A /* _HackCourse__iOS_week3___AdrianHsu.xcdatamodel */;
+			path = "_HackCourse__iOS_week3___AdrianHsu.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7F79BFDE1AFE6B1200FA8D4A /* Project object */;
+}

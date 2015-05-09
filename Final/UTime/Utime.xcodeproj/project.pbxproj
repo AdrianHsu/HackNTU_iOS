@@ -18,6 +18,7 @@
 		7F64768D1AFE0C0D00A44671 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64768A1AFE0C0D00A44671 /* FBSDKCoreKit.framework */; };
 		7F64768E1AFE0C0D00A44671 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64768B1AFE0C0D00A44671 /* FBSDKLoginKit.framework */; };
 		7F64768F1AFE0C0D00A44671 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64768C1AFE0C0D00A44671 /* FBSDKShareKit.framework */; };
+		7F79BFDC1AFE536E00FA8D4A /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F79BFDB1AFE536E00FA8D4A /* ToDoListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		7F64768A1AFE0C0D00A44671 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7F64768B1AFE0C0D00A44671 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		7F64768C1AFE0C0D00A44671 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7F79BFDA1AFE536E00FA8D4A /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
+		7F79BFDB1AFE536E00FA8D4A /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				7F6476601AFE0B0100A44671 /* AppDelegate.m */,
 				7F6476651AFE0B0100A44671 /* ViewController.h */,
 				7F6476661AFE0B0100A44671 /* ViewController.m */,
+				7F79BFDA1AFE536E00FA8D4A /* ToDoListTableViewController.h */,
+				7F79BFDB1AFE536E00FA8D4A /* ToDoListTableViewController.m */,
 				7F6476681AFE0B0100A44671 /* Main.storyboard */,
 				7F64766B1AFE0B0100A44671 /* Images.xcassets */,
 				7F64766D1AFE0B0100A44671 /* LaunchScreen.xib */,
@@ -237,6 +242,7 @@
 				7F6476611AFE0B0100A44671 /* AppDelegate.m in Sources */,
 				7F64765E1AFE0B0100A44671 /* main.m in Sources */,
 				7F6476671AFE0B0100A44671 /* ViewController.m in Sources */,
+				7F79BFDC1AFE536E00FA8D4A /* ToDoListTableViewController.m in Sources */,
 				7F6476641AFE0B0100A44671 /* Utime.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +446,7 @@
 				7F6476801AFE0B0100A44671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F6476811AFE0B0100A44671 /* Build configuration list for PBXNativeTarget "UtimeTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +455,7 @@
 				7F6476831AFE0B0100A44671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

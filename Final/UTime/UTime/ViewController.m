@@ -11,7 +11,7 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface ViewController()
+@interface SimpleTableViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -23,8 +23,14 @@
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     loginButton.center = CGPointMake(160, 480);
     //CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
+    
     [self.view addSubview:loginButton];
 }
+
+- (IBAction)buttonPress:(id)sender {
+    self.label.text = @"adrian hsu";
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -18,7 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view, typically from a nib.
+    /*FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    loginButton.center = CGPointMake(160, 480);
+    //CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
+    [self.view addSubview:loginButton];*/
+    
 }
 
 - (void)didReceiveMemoryWarning {

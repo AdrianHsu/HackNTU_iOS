@@ -1,19 +1,19 @@
 //
-//  UtimeTests.m
-//  UtimeTests
+//  UTimeTests.m
+//  UTimeTests
 //
-//  Created by AdrianHsu on 2015/5/9.
+//  Created by AdrianHsu on 2015/5/7.
 //  Copyright (c) 2015年 AdrianHsu. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface UtimeTests : XCTestCase
+@interface UTimeTests : XCTestCase
 
 @end
 
-@implementation UtimeTests
+@implementation UTimeTests
 
 - (void)setUp {
     [super setUp];

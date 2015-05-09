@@ -10,6 +10,8 @@
 
 @interface Profile_ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *Count_button;
+
 @end
 
 @implementation Profile_ViewController

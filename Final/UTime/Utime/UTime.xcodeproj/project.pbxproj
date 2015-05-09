@@ -18,6 +18,7 @@
 		7F91F9CF1AFB66080017CB05 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F91F9CC1AFB66080017CB05 /* FBSDKCoreKit.framework */; };
 		7F91F9D01AFB66080017CB05 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F91F9CD1AFB66080017CB05 /* FBSDKLoginKit.framework */; };
 		7F91F9D11AFB66080017CB05 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F91F9CE1AFB66080017CB05 /* FBSDKShareKit.framework */; };
+		7F91F9D61AFB72AD0017CB05 /* Profile_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F91F9D51AFB72AD0017CB05 /* Profile_ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		7F91F9CC1AFB66080017CB05 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7F91F9CD1AFB66080017CB05 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		7F91F9CE1AFB66080017CB05 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7F91F9D41AFB72AD0017CB05 /* Profile_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile_ViewController.h; sourceTree = "<group>"; };
+		7F91F9D51AFB72AD0017CB05 /* Profile_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile_ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				7F91F99F1AFB55330017CB05 /* AppDelegate.m */,
 				7F91F9A41AFB55340017CB05 /* ViewController.h */,
 				7F91F9A51AFB55340017CB05 /* ViewController.m */,
+				7F91F9D41AFB72AD0017CB05 /* Profile_ViewController.h */,
+				7F91F9D51AFB72AD0017CB05 /* Profile_ViewController.m */,
 				7F91F9A71AFB55340017CB05 /* Main.storyboard */,
 				7F91F9AA1AFB55340017CB05 /* Images.xcassets */,
 				7F91F9AC1AFB55340017CB05 /* LaunchScreen.xib */,
@@ -244,6 +249,7 @@
 			files = (
 				7F91F9A31AFB55330017CB05 /* UTime.xcdatamodeld in Sources */,
 				7F91F9A01AFB55330017CB05 /* AppDelegate.m in Sources */,
+				7F91F9D61AFB72AD0017CB05 /* Profile_ViewController.m in Sources */,
 				7F91F9A61AFB55340017CB05 /* ViewController.m in Sources */,
 				7F91F99D1AFB55330017CB05 /* main.m in Sources */,
 			);

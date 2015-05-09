@@ -12,6 +12,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIPickerView *Countdown;
+
 @end
 
 @implementation ViewController
@@ -20,7 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.center = self.view.center;
+    loginButton.center = CGPointMake(160, 480);
+    //CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
     [self.view addSubview:loginButton];
 }
 

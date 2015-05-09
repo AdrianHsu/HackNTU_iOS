@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>UTime.xcscheme</key>
+		<key>Utime.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7F91F9961AFB55330017CB05</key>
+		<key>7F6476571AFE0B0100A44671</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7F91F9B21AFB55340017CB05</key>
+		<key>7F6476731AFE0B0100A44671</key>
 		<dict>
 			<key>primary</key>
 			<true/>

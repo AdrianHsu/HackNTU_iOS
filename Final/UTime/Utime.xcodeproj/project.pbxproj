@@ -15,6 +15,9 @@
 		7F64766C1AFE0B0100A44671 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F64766B1AFE0B0100A44671 /* Images.xcassets */; };
 		7F64766F1AFE0B0100A44671 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F64766D1AFE0B0100A44671 /* LaunchScreen.xib */; };
 		7F64767B1AFE0B0100A44671 /* UtimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F64767A1AFE0B0100A44671 /* UtimeTests.m */; };
+		7F64768D1AFE0C0D00A44671 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64768A1AFE0C0D00A44671 /* FBSDKCoreKit.framework */; };
+		7F64768E1AFE0C0D00A44671 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64768B1AFE0C0D00A44671 /* FBSDKLoginKit.framework */; };
+		7F64768F1AFE0C0D00A44671 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64768C1AFE0C0D00A44671 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		7F6476741AFE0B0100A44671 /* UtimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F6476791AFE0B0100A44671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F64767A1AFE0B0100A44671 /* UtimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UtimeTests.m; sourceTree = "<group>"; };
+		7F64768A1AFE0C0D00A44671 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7F64768B1AFE0C0D00A44671 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7F64768C1AFE0C0D00A44671 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F64768E1AFE0C0D00A44671 /* FBSDKLoginKit.framework in Frameworks */,
+				7F64768D1AFE0C0D00A44671 /* FBSDKCoreKit.framework in Frameworks */,
+				7F64768F1AFE0C0D00A44671 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +108,9 @@
 		7F64765B1AFE0B0100A44671 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F64768A1AFE0C0D00A44671 /* FBSDKCoreKit.framework */,
+				7F64768B1AFE0C0D00A44671 /* FBSDKLoginKit.framework */,
+				7F64768C1AFE0C0D00A44671 /* FBSDKShareKit.framework */,
 				7F64765C1AFE0B0100A44671 /* Info.plist */,
 				7F64765D1AFE0B0100A44671 /* main.m */,
 			);
@@ -351,6 +363,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/AdrianHsu/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = Utime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +377,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/AdrianHsu/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = Utime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -59,7 +59,7 @@ class PaletteViewController: UIViewController {
         return image
     }
     
-    @IBAction func doShare(sender: AnyObject) {
+    /*@IBAction func doShare(sender: AnyObject) {
         var image = captureColor()
         var compose = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
         compose.addImage(image)
@@ -67,8 +67,7 @@ class PaletteViewController: UIViewController {
         self.presentViewController(compose, animated: true) { () -> Void in
             //
         }
-        
-    }
+    }*/
     
     @IBAction func saveColor(sender: AnyObject) {
         var rColor = rSlider.value

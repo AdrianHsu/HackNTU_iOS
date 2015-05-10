@@ -49,7 +49,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="e2D-gh-qbo" kind="presentation" id="d8B-s8-Nbk"/>
+                                    <segue destination="YaN-Rc-RV7" kind="presentation" id="TlO-q1-ElR"/>
                                 </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="you-HN-5Yi">
@@ -148,35 +148,52 @@
             </objects>
             <point key="canvasLocation" x="297" y="391"/>
         </scene>
-        <!--PaletteViewController-->
-        <scene sceneID="tW4-Qq-zrL">
+        <!--Palette_ViewController-->
+        <scene sceneID="yhw-T5-AND">
             <objects>
-                <viewController title="PaletteVIewController" id="e2D-gh-qbo" userLabel="PaletteViewController" sceneMemberID="viewController">
+                <viewController title="Palette_ViewController" id="YaN-Rc-RV7" customClass="PaletteViewController" customModule="_HackCourse__iOS_week3___AdrianHsu" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RvX-jR-c10"/>
-                        <viewControllerLayoutGuide type="bottom" id="ajn-3p-tF0"/>
+                        <viewControllerLayoutGuide type="top" id="Q50-US-iAZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ief-Ma-0Kc"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SPm-Sp-lek">
+                    <view key="view" contentMode="scaleToFill" id="Cu9-0u-2w1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7QZ-Bq-BXh">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Eai-kI-YA7">
+                                <rect key="frame" x="148" y="309" width="118" height="31"/>
+                                <color key="tintColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="doChange:" destination="YaN-Rc-RV7" eventType="valueChanged" id="omV-5M-KOL"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="e5c-yh-L1z">
+                                <rect key="frame" x="148" y="402" width="118" height="31"/>
+                                <color key="tintColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="doChange:" destination="YaN-Rc-RV7" eventType="valueChanged" id="I6F-NY-rif"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GkB-6L-ZbQ">
                                 <rect key="frame" x="148" y="353" width="118" height="31"/>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000149011612" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pb9-ax-Wya">
-                                <rect key="frame" x="148" y="391" width="118" height="31"/>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.10000000149011612" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6yK-fe-xm9">
-                                <rect key="frame" x="148" y="315" width="118" height="31"/>
+                                <color key="tintColor" red="0.40000000596046448" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="doChange:" destination="YaN-Rc-RV7" eventType="valueChanged" id="nB8-4f-Bzs"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="bSlider" destination="e5c-yh-L1z" id="h8j-9d-ShR"/>
+                        <outlet property="gSlider" destination="GkB-6L-ZbQ" id="2SK-9H-UiY"/>
+                        <outlet property="rSlider" destination="Eai-kI-YA7" id="fbg-zH-rJe"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bPe-5h-u5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idc-pY-x1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="391"/>
+            <point key="canvasLocation" x="774" y="377"/>
         </scene>
     </scenes>
     <resources>

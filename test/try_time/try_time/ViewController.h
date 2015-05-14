@@ -12,6 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *remainingTimeLabel;
 @property (weak, nonatomic) IBOutlet UIButton *stopTimeButton;
+/*- (IBAction)inputMinute:(UITextField *)sender;
+- (IBAction)inputSecond:(UITextField *)sender;*/
+
 
 - (IBAction)startButtonPushed:(id)sender;
 @end

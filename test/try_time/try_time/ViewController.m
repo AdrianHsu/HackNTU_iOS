@@ -23,14 +23,14 @@
 {
     [super viewDidLoad];
     self.remainingTimeLabel.textColor=[UIColor lightGrayColor];
+    
     currMinute=0;
     setMinute=currMinute;
-    currSeconds=5;
+    currSeconds=0;
     setSeconds=currSeconds;
     [self.remainingTimeLabel setText:[NSString stringWithFormat:@"%@%d%@%02d",@"Time : ",currMinute,@":",currSeconds]];
 
     self.remainingTimeLabel.backgroundColor=[UIColor clearColor];
-    
     // Do any additional setup after loading the view, typically from a nib.
 //    [self start];
     
@@ -72,6 +72,16 @@
         [self.stopTimeButton setTitle:@"Start" forState:UIControlStateNormal];
     }
 }
+/*- (IBAction)inputMinute:(UITextField *)sender {
+    UITextField * text = (UITextField *) sender;
+    currMinute = [text.text intValue];
+    NSLog(@"%@", text.text);
+    [self.remainingTimeLabel setText:[NSString stringWithFormat:@"%@%d%@%02d",@"Time : ",currMinute,@":",currSeconds]];
+}
+
+- (IBAction)inputSecond:(UITextField *)sender {
+}*/
+
 - (IBAction)startButtonPushed:(id)sender {
     UIButton * button = (UIButton *) sender;
     if ([button.titleLabel.text isEqual: @"Start"]){

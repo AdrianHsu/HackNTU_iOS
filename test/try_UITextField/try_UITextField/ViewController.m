@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ViewController ()
+@interface UIViewController ()
 
 @end
 
@@ -41,6 +41,41 @@
     
     // 將TextField加入View
     [self.view addSubview:self.dyTextField];
+    
+    
+    // MARK:- UIAlertView
+    /*UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hello There!"
+                                                    message:@"Welcome to Adrian's first app!"
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];*/
+
+    // MARK:- Background
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"IMG_0332.jpg"]];
+    
+    
+    /*
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"IMG_0332.jpg"]];;
+    backgroundView.frame = CGRectMake(-100, 0, 736, 736);
+    [self.view sendSubviewToBack:(UIView*)backgroundView];
+    [self.view addSubview:backgroundView];*/
+
+    
+    
+    // 初始化(圖片為363x198，圖片太大將它縮為1/2)
+    /*UIImageView *dyImageView = [[UIImageView alloc] initWithFrame: CGRectMake(-80,0,700,700)];
+    
+    // 圖片檔案引入UIImage物件(需要先將圖片加入專案中)
+    // initWithNamed:@"cropped-Logo"]];
+    UIImage *dyImage = [UIImage imageNamed:@"IMG_0332.jpg"];
+    
+    // 圖片影像物件指定至UIImageView之影象
+    dyImageView.image = dyImage;
+    
+    // UIImageView加入主要View中
+    [self.view addSubview:dyImageView];*/
     
     
 }

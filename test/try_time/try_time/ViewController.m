@@ -23,8 +23,9 @@
 {
     [super viewDidLoad];
     self.remainingTimeLabel.textColor=[UIColor lightGrayColor];
-    
-    currMinute=0;
+    //self.remainingTimeLabel.font=[UIFont ];
+    self.remainingTimeLabel.font=[UIFont systemFontOfSize:20];
+    currMinute=1;
     setMinute=currMinute;
     currSeconds=0;
     setSeconds=currSeconds;
@@ -46,8 +47,8 @@
 -(void)resetToInitialState
 {
     [timer invalidate];
-    currMinute=0;
-    currSeconds=5;
+    currMinute=1;
+    currSeconds=0;
     [self.remainingTimeLabel setText:[NSString stringWithFormat:@"%@%d%@%02d",@"Time : ",currMinute,@":",currSeconds]];
 }
 -(void)timerFired

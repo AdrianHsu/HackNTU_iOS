@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>EA7A30AD-77FB-4DBF-A11B-EAE4E0337A07</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>try_UITextField</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>38B330686B5F30BA93F65E1689CA5573D85DAB15</key>
 		<string>https://github.com/AdrianHsu/HackNTU_iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>test/try_UITextField/try_UITextField.xcodeproj/project.xcworkspace</string>
+	<string>test/try_UITextField/try_UITextField.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>38B330686B5F30BA93F65E1689CA5573D85DAB15</key>

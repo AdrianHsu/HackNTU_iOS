@@ -15,6 +15,7 @@
 		7FD10E7B1B04ACCD00CAED8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD10E7A1B04ACCD00CAED8D /* Images.xcassets */; };
 		7FD10E7E1B04ACCD00CAED8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD10E7C1B04ACCD00CAED8D /* LaunchScreen.xib */; };
 		7FD10E8A1B04ACCD00CAED8D /* try_UITextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD10E891B04ACCD00CAED8D /* try_UITextFieldTests.m */; };
+		7FD10E941B04D27600CAED8D /* IMG_0332.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7FD10E931B04D27600CAED8D /* IMG_0332.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		7FD10E831B04ACCD00CAED8D /* try_UITextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = try_UITextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD10E881B04ACCD00CAED8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FD10E891B04ACCD00CAED8D /* try_UITextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = try_UITextFieldTests.m; sourceTree = "<group>"; };
+		7FD10E931B04D27600CAED8D /* IMG_0332.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0332.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				7FD10E751B04ACCD00CAED8D /* ViewController.m */,
 				7FD10E771B04ACCD00CAED8D /* Main.storyboard */,
 				7FD10E7A1B04ACCD00CAED8D /* Images.xcassets */,
+				7FD10E931B04D27600CAED8D /* IMG_0332.jpg */,
 				7FD10E7C1B04ACCD00CAED8D /* LaunchScreen.xib */,
 				7FD10E711B04ACCD00CAED8D /* try_UITextField.xcdatamodeld */,
 				7FD10E6A1B04ACCD00CAED8D /* Supporting Files */,
@@ -205,6 +208,7 @@
 				7FD10E791B04ACCD00CAED8D /* Main.storyboard in Resources */,
 				7FD10E7E1B04ACCD00CAED8D /* LaunchScreen.xib in Resources */,
 				7FD10E7B1B04ACCD00CAED8D /* Images.xcassets in Resources */,
+				7FD10E941B04D27600CAED8D /* IMG_0332.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +424,7 @@
 				7FD10E8F1B04ACCD00CAED8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FD10E901B04ACCD00CAED8D /* Build configuration list for PBXNativeTarget "try_UITextFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +433,7 @@
 				7FD10E921B04ACCD00CAED8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

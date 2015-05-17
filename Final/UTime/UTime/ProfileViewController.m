@@ -8,10 +8,12 @@
 
 #import "ProfileViewController.h"
 #import "AppDelegate.h"
+#import "MissionItem.h"
 
 @interface ProfileViewController () <UITextFieldDelegate>
 
 @property (nonatomic) CFTimeInterval countDownDuration;
+@property (nonatomic) BOOL canShowDatePicker;
 
 @end
 
@@ -30,7 +32,7 @@
     
     
     self.timeButton.imageView.contentMode = UIViewContentModeScaleAspectFill;
-    
+    self.canShowDatePicker = NO;
 }
 
 - (UIView *)inputAccessoryView{
@@ -52,6 +54,11 @@
 }
 
 - (UIView *)inputView{
+    
+    if (![self isFirstResponder]) {
+        return nil;
+    }
+    
     return self.datePicker;
 }
 
@@ -60,9 +67,17 @@
     
     NSLog(@"textField is first responder:%d",self.missonTextField.isFirstResponder);
     
+    NSLog(@"self.isFirstResponder:%d",self.isFirstResponder);
     if (self.missonTextField.isFirstResponder) {
         return NO;
     }
+    
+    return self.canShowDatePicker;
+}
+
+- (BOOL)canResignFirstResponder{
+    
+    self.canShowDatePicker = NO;
     
     return YES;
 }
@@ -126,7 +141,6 @@
 
 
 - (void) done:(id)sender{
-    
     self.countDownDuration = [self.datePicker countDownDuration];
     [self resignFirstResponder];
     
@@ -138,40 +152,39 @@
 }
 
 - (IBAction)setTime:(id)sender {
+    self.canShowDatePicker = YES;
     [self becomeFirstResponder];
 }
 
 - (IBAction)startCountown:(id)sender {
     
+  
     NSString *name = self.missonTextField.text;
+    
     
     if ([name isEqualToString:@""]) {
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"" message:@"set as FOCUS MODE?" preferredStyle: UIAlertControllerStyleAlert];
         [alert addAction: [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
         [self presentViewController:alert animated:YES completion:nil];
-//        
+//
 //        alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
 //        presentViewController(alert, animated: true, completion: nil)
     }
     else {
         // do save
         AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-        AppDelegate *context = [appDelegate managedObjectContext];
+        NSManagedObjectContext *context = [appDelegate managedObjectContext];
         // 取得 Context
         // var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         // var context = appDelegate.managedObjectContext!
         
-        * MissionItem = [[NSEntityDescription insertNewObjectForEntityForName:"MissionItem" inManagedObjectContext:context]];
+        MissionItem* missionItem = [NSEntityDescription insertNewObjectForEntityForName:@"MissionItem" inManagedObjectContext:context];
+        missionItem.mission = name;
+        [appDelegate saveContext];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"" message:@"START!" preferredStyle: UIAlertControllerStyleAlert];
+        [alert addAction: [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+        [self presentViewController:alert animated:YES completion:nil];
         
-        // 建立 Entity
-        var todoItem = NSEntityDescription.insertNewObjectForEntityForName("TodoItem", inManagedObjectContext: context) as! TodoItem
-        todoItem.name = name
-        
-        // 儲存 Todo項目
-        appDelegate.saveContext()
-        
-        // 返回上一頁
-        self.navigationController?.popViewControllerAnimated(true)
         
     }
     

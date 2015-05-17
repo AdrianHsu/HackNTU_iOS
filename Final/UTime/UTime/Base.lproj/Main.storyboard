@@ -125,7 +125,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="StartCountown:" destination="mhw-6e-Yb4" eventType="touchUpInside" id="N1M-d8-vnb"/>
                                     <action selector="startCountown:" destination="mhw-6e-Yb4" eventType="touchUpInside" id="aiW-fQ-nar"/>
                                 </connections>
                             </button>
@@ -138,7 +137,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="SetTime:" destination="mhw-6e-Yb4" eventType="touchUpInside" id="KU1-we-cUr"/>
                                     <action selector="setTime:" destination="mhw-6e-Yb4" eventType="touchUpInside" id="O8v-BM-TII"/>
                                 </connections>
                             </button>

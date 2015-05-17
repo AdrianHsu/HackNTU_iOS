@@ -21,6 +21,8 @@
 		7F64768D1AFE0C0D00A44671 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64768A1AFE0C0D00A44671 /* FBSDKCoreKit.framework */; };
 		7F64768E1AFE0C0D00A44671 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64768B1AFE0C0D00A44671 /* FBSDKLoginKit.framework */; };
 		7F64768F1AFE0C0D00A44671 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F64768C1AFE0C0D00A44671 /* FBSDKShareKit.framework */; };
+		7F7371041B0884DC00FD523F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7371031B0884DC00FD523F /* TableViewController.m */; };
+		7F7371131B08885500FD523F /* MissionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7371121B08885500FD523F /* MissionItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		7F64768A1AFE0C0D00A44671 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7F64768B1AFE0C0D00A44671 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		7F64768C1AFE0C0D00A44671 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7F7371021B0884DC00FD523F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		7F7371031B0884DC00FD523F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		7F7371111B08885500FD523F /* MissionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MissionItem.h; path = ../MissionItem.h; sourceTree = "<group>"; };
+		7F7371121B08885500FD523F /* MissionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MissionItem.m; path = ../MissionItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,14 +106,18 @@
 		7F64765A1AFE0B0100A44671 /* Utime */ = {
 			isa = PBXGroup;
 			children = (
+				7F2566571B0851B4002512FC /* image.xcassets */,
+				7F6476681AFE0B0100A44671 /* Main.storyboard */,
 				7F64765F1AFE0B0100A44671 /* AppDelegate.h */,
 				7F6476601AFE0B0100A44671 /* AppDelegate.m */,
 				7F6476661AFE0B0100A44671 /* ViewController.m */,
 				7F6476651AFE0B0100A44671 /* ViewController.h */,
-				7F2566571B0851B4002512FC /* image.xcassets */,
-				7F6476681AFE0B0100A44671 /* Main.storyboard */,
+				7F7371021B0884DC00FD523F /* TableViewController.h */,
+				7F7371031B0884DC00FD523F /* TableViewController.m */,
 				7F2566591B085725002512FC /* ProfileViewController.h */,
 				7F25665A1B085725002512FC /* ProfileViewController.m */,
+				7F7371111B08885500FD523F /* MissionItem.h */,
+				7F7371121B08885500FD523F /* MissionItem.m */,
 				7F64766D1AFE0B0100A44671 /* LaunchScreen.xib */,
 				7F6476621AFE0B0100A44671 /* Utime.xcdatamodeld */,
 				7F2566411B0832F8002512FC /* IMG_4673.jpg */,
@@ -249,10 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F6476611AFE0B0100A44671 /* AppDelegate.m in Sources */,
+				7F7371131B08885500FD523F /* MissionItem.m in Sources */,
 				7F6476671AFE0B0100A44671 /* ViewController.m in Sources */,
 				7F6476641AFE0B0100A44671 /* Utime.xcdatamodeld in Sources */,
 				7F25665B1B085725002512FC /* ProfileViewController.m in Sources */,
 				7F25665D1B085996002512FC /* main.m in Sources */,
+				7F7371041B0884DC00FD523F /* TableViewController.m in Sources */,
 				7F2566451B0838D3002512FC /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

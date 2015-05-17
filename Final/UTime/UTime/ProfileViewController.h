@@ -15,8 +15,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *timeButton;
 
 
-- (IBAction)SetTime:(id)sender;
-- (IBAction)StartCountown:(id)sender;
+- (IBAction)setTime:(id)sender;
+- (IBAction)startCountown:(id)sender;
 - (IBAction)setMission:(id)sender;
 
 @end

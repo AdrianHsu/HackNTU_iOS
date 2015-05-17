@@ -7,6 +7,7 @@
 //
 
 #import "ProfileViewController.h"
+#import "AppDelegate.h"
 
 @interface ProfileViewController () <UITextFieldDelegate>
 
@@ -72,18 +73,6 @@
 }
 
 
-//-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
-//{
-//    if([string isEqualToString:@"\n"]){
-//        [textField resignFirstResponder];
-//        [self resignFirstResponder];
-//        
-//        return NO;
-//    }else {
-//        return YES;
-//    }
-//}
-
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
@@ -148,11 +137,44 @@
     
 }
 
-- (IBAction)SetTime:(id)sender {
+- (IBAction)setTime:(id)sender {
     [self becomeFirstResponder];
 }
 
-- (IBAction)StartCountown:(id)sender {
+- (IBAction)startCountown:(id)sender {
+    
+    NSString *name = self.missonTextField.text;
+    
+    if ([name isEqualToString:@""]) {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"" message:@"set as FOCUS MODE?" preferredStyle: UIAlertControllerStyleAlert];
+        [alert addAction: [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+        [self presentViewController:alert animated:YES completion:nil];
+//        
+//        alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+//        presentViewController(alert, animated: true, completion: nil)
+    }
+    else {
+        // do save
+        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+        AppDelegate *context = [appDelegate managedObjectContext];
+        // 取得 Context
+        // var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        // var context = appDelegate.managedObjectContext!
+        
+        * MissionItem = [[NSEntityDescription insertNewObjectForEntityForName:"MissionItem" inManagedObjectContext:context]];
+        
+        // 建立 Entity
+        var todoItem = NSEntityDescription.insertNewObjectForEntityForName("TodoItem", inManagedObjectContext: context) as! TodoItem
+        todoItem.name = name
+        
+        // 儲存 Todo項目
+        appDelegate.saveContext()
+        
+        // 返回上一頁
+        self.navigationController?.popViewControllerAnimated(true)
+        
+    }
+    
 }
 
 - (IBAction)setMission:(id)sender {

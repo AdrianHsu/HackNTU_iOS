@@ -102,6 +102,9 @@
                                 <state key="normal" image="Menu_Icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="q3f-la-UcG" kind="presentation" id="dUl-p5-zd1"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HKA-Tb-OXQ">
                                 <rect key="frame" x="0.0" y="543" width="375" height="30"/>
@@ -123,6 +126,7 @@
                                 </state>
                                 <connections>
                                     <action selector="StartCountown:" destination="mhw-6e-Yb4" eventType="touchUpInside" id="N1M-d8-vnb"/>
+                                    <action selector="startCountown:" destination="mhw-6e-Yb4" eventType="touchUpInside" id="aiW-fQ-nar"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eah-lO-W3u">
@@ -135,6 +139,7 @@
                                 </state>
                                 <connections>
                                     <action selector="SetTime:" destination="mhw-6e-Yb4" eventType="touchUpInside" id="KU1-we-cUr"/>
+                                    <action selector="setTime:" destination="mhw-6e-Yb4" eventType="touchUpInside" id="O8v-BM-TII"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc9-7X-Q7p">
@@ -223,6 +228,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOF-ZF-2ut" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1088" y="831"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="dvg-s1-e0z">
+            <objects>
+                <tableViewController id="q3f-la-UcG" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="5ud-IV-g0e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="u3k-IZ-BIf">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u3k-IZ-BIf" id="yGP-W9-j7t">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="q3f-la-UcG" id="L60-IT-wfC"/>
+                            <outlet property="delegate" destination="q3f-la-UcG" id="Iw5-8j-EVX"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Tm-E2-GDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560.5" y="830.5"/>
         </scene>
     </scenes>
     <resources>

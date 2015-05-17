@@ -91,14 +91,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG_1" translatesAutoresizingMaskIntoConstraints="NO" id="2uN-5b-gEv">
                                 <rect key="frame" x="0.0" y="236" width="320" height="303"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eah-lO-W3u">
-                                <rect key="frame" x="0.0" y="500" width="215" height="69"/>
-                                <state key="normal" title="Button" image="Time_Icon">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-wP-iPb">
-                                <rect key="frame" x="160" y="500" width="215" height="68"/>
+                                <rect key="frame" x="160" y="500" width="160" height="68"/>
                                 <state key="normal" title="Button" image="Play_Icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -115,6 +109,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ns6-Uo-z9i">
                                 <rect key="frame" x="16" y="28" width="45" height="48"/>
                                 <state key="normal" image="Menu_Icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eah-lO-W3u">
+                                <rect key="frame" x="0.0" y="500" width="160" height="68"/>
+                                <state key="normal" title="Button" image="Time_Icon">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>

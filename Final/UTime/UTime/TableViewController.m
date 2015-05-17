@@ -24,7 +24,7 @@
     
     [self loadData];
     // Do any additional setup after loading the view.
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:"didSave" name:NSManagedObjectContextDidSaveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector: "didSave" name:NSManagedObjectContextDidSaveNotification object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,11 +65,26 @@
     [self loadData];
 }
 
-//func viewWillAppear(animated:Bool)
+
 -(void) viewWillAppear:(BOOL)animated {
-//    [super.viewWillAppear(animated)];
+
     [super viewWillAppear:animated];
     
+}
+
+/*-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"toEdit"])
+    {
+        EditViewController *editViewController = [segue destinationViewController];
+        MissionItem missionItem = [editViewController missionItem];
+    }
+}*/
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _dataSource.count;
 }
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -83,5 +98,28 @@
     return cell;
 }
 
+// MARK: 刪除動作
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    return true;
+}
+/*-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if(editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        MissionItem *missionItem = (MissionItem *)self.dataSource[indexPath.row];
+        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+        NSManagedObjectContext *context = [appDelegate managedObjectContext];
+        
+        [context deleteObject: missionItem];
+        [appDelegate saveContext];
+    }
+}*/
 
+// /MARK: - UITableViewDelegate
+
+/*-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MissionItem *missionItem = (MissionItem *)self.dataSource[indexPath.row];
+    performSegueWithIdentifier("toEdit", sender: missionItem)
+}*/
 @end

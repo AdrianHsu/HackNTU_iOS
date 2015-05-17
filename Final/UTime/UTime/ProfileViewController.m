@@ -96,7 +96,7 @@
         return;
     }
     
-    NSLog(@"userInfo:%@",note.userInfo);
+    //NSLog(@"userInfo:%@",note.userInfo);
     NSValue *endFrameValue = note.userInfo[UIKeyboardFrameEndUserInfoKey];
     CGRect endFrame = [endFrameValue CGRectValue];
     

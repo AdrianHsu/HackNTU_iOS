@@ -81,6 +81,44 @@
                     <view key="view" contentMode="scaleToFill" id="b9r-X5-gKt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG_2" translatesAutoresizingMaskIntoConstraints="NO" id="8Dy-AE-mOC">
+                                <rect key="frame" x="0.0" y="314" width="320" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG_3" translatesAutoresizingMaskIntoConstraints="NO" id="zSh-wg-UOz">
+                                <rect key="frame" x="-1" y="442" width="320" height="58"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG_1" translatesAutoresizingMaskIntoConstraints="NO" id="2uN-5b-gEv">
+                                <rect key="frame" x="0.0" y="236" width="320" height="303"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eah-lO-W3u">
+                                <rect key="frame" x="0.0" y="500" width="215" height="69"/>
+                                <state key="normal" title="Button" image="Time_Icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-wP-iPb">
+                                <rect key="frame" x="160" y="500" width="215" height="68"/>
+                                <state key="normal" title="Button" image="Play_Icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG_4" translatesAutoresizingMaskIntoConstraints="NO" id="Ma7-rN-1Kb">
+                                <rect key="frame" x="0.0" y="-12" width="320" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc9-7X-Q7p">
+                                <rect key="frame" x="259" y="28" width="45" height="48"/>
+                                <state key="normal" image="Globe_Icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ns6-Uo-z9i">
+                                <rect key="frame" x="16" y="28" width="45" height="48"/>
+                                <state key="normal" image="Menu_Icon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -91,6 +129,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BG_1" width="320" height="261"/>
+        <image name="BG_2" width="320" height="116"/>
+        <image name="BG_3" width="320" height="55"/>
+        <image name="BG_4" width="360" height="146"/>
+        <image name="Globe_Icon" width="45" height="48"/>
         <image name="IMG_4673.jpg" width="3264" height="2448"/>
+        <image name="Menu_Icon" width="45" height="48"/>
+        <image name="Play_Icon" width="160" height="68"/>
+        <image name="Time_Icon" width="160" height="69"/>
     </resources>
 </document>

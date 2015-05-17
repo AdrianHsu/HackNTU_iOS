@@ -120,7 +120,7 @@
     if (self.isFirstResponder) {
         return;
     }
-    
+
     self.view.transform = CGAffineTransformIdentity;
     
 }

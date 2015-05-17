@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -10,36 +9,66 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="eiU-C0-6W1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xqh-Oi-POD"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="zL2-WH-DpU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7T-Vn-9cW">
-                                <rect key="frame" x="142" y="269" width="37" height="30"/>
-                                <state key="normal" title="Enter">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="mhw-6e-Yb4" kind="presentation" id="kYd-ia-EcM"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_4673.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qsf-D7-J76">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="V7T-Vn-9cW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="126" id="QZb-zr-jxP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="V7T-Vn-9cW" secondAttribute="trailing" constant="125" id="WxE-fr-cew"/>
-                            <constraint firstItem="V7T-Vn-9cW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="249" id="aog-8w-BJt"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="V7T-Vn-9cW" secondAttribute="bottom" constant="269" id="xBa-7T-6Ts"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="hAD-hH-fBp" kind="presentation" identifier="show_login_segue" id="035-7C-zBP"/>
+                        <segue destination="mhw-6e-Yb4" kind="presentation" identifier="show_profile_segue" modalTransitionStyle="flipHorizontal" id="OfL-Mp-9bF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="645" y="831"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Sv7-NE-ZGq">
+            <objects>
+                <viewController id="hAD-hH-fBp" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="av4-mB-luW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lao-PZ-c9S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5x0-Wc-FA6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rza-nC-5TC">
+                                <rect key="frame" x="105" y="500" width="111" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BiI-1H-DDi"/>
+                                    <constraint firstAttribute="width" constant="111" id="HK3-SH-nrV"/>
+                                </constraints>
+                                <state key="normal" title="Login Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginFacebook:" destination="hAD-hH-fBp" eventType="touchUpInside" id="Kyl-vg-5mC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="rza-nC-5TC" secondAttribute="centerX" id="5PC-Vh-EFv"/>
+                            <constraint firstItem="Lao-PZ-c9S" firstAttribute="top" secondItem="rza-nC-5TC" secondAttribute="bottom" constant="38" id="rMN-k8-qYM"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Abu-Wo-CGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="151"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nNZ-XN-8qb">
@@ -61,4 +90,7 @@
             <point key="canvasLocation" x="1088" y="831"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_4673.jpg" width="3264" height="2448"/>
+    </resources>
 </document>

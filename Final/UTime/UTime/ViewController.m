@@ -7,11 +7,8 @@
 //
 
 #import "ViewController.h"
-#import <UIKit/UIKit.h>
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface SimpleTableViewController : UIViewController
+@interface ViewController()
 
 @end
 
@@ -19,12 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.center = CGPointMake(160, 480);
-    //CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
     
-    [self.view addSubview:loginButton];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self performSegueWithIdentifier:@"show_login_segue" sender:nil];
+    });
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    NSLog(@"isLogined:%d",self.isLogined);
+    
+    if (self.isLogined) {
+        [self performSegueWithIdentifier:@"show_profile_segue" sender:nil];
+    }
+    
+}
+
+- (IBAction) exitFromLoginPage:(UIStoryboardSegue *)segue {
+    
 }
 
 - (void)didReceiveMemoryWarning {

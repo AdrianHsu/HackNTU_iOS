@@ -10,5 +10,7 @@
 
 @interface ViewController : UIViewController
 
+@property(nonatomic) BOOL isLogined;
+
 @end
 

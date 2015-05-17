@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>instaCamera.xcscheme</key>
+		<key>DatePickerTimer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7FD10DFE1B0229A400CAED8D</key>
+		<key>50ABD1BB1B0834F6002DDE65</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7FD10E161B0229A400CAED8D</key>
+		<key>50ABD1D01B0834F6002DDE65</key>
 		<dict>
 			<key>primary</key>
 			<true/>

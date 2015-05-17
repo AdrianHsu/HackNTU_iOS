@@ -248,7 +248,12 @@
                             <outlet property="delegate" destination="q3f-la-UcG" id="Iw5-8j-EVX"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="5ud-IV-g0e" id="zdS-XQ-Hxf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Tm-E2-GDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

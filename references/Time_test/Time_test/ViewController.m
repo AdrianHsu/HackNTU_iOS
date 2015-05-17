@@ -20,21 +20,16 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     UILabel* aUILabel;
-    /*MZTimerLabel *stopwatch = [[MZTimerLabel alloc] initWithLabel:aUILabel];
+    MZTimerLabel *stopwatch = [[MZTimerLabel alloc] initWithLabel:aUILabel];
     [self.view addSubview:stopwatch];
-    [stopwatch start];*/
+    [stopwatch start];
     
-    int input;
-- (IBAction)restoreInput:(id)input
-    {
-        
-    
-    }
+
     MZTimerLabel *timer = [[MZTimerLabel alloc] initWithLabel:aUILabel andTimerType:MZTimerLabelTypeTimer];
     timer.frame = CGRectMake(100,50,100,20);
     timer.timeLabel.font = [UIFont systemFontOfSize:20.0f];
     timer.timeLabel.textColor = [UIColor redColor];
-    [timer setCountDownTime:input];
+    [timer setCountDownTime:60];
     [self.view addSubview:timer];
     [timer start];
     

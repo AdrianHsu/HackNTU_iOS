@@ -1,15 +1,15 @@
 //
-//  instaCameraTests.swift
-//  instaCameraTests
+//  DatePickerTimerTests.swift
+//  DatePickerTimerTests
 //
-//  Created by AdrianHsu on 2015/5/12.
-//  Copyright (c) 2015年 AdrianHsu. All rights reserved.
+//  Created by Max Chen on 2015/5/17.
+//  Copyright (c) 2015年 Max Chen. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class instaCameraTests: XCTestCase {
+class DatePickerTimerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

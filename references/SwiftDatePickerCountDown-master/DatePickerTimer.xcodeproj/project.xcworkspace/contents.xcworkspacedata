@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:instaCamera.xcodeproj">
+      location = "self:DatePickerTimer.xcodeproj">
    </FileRef>
 </Workspace>

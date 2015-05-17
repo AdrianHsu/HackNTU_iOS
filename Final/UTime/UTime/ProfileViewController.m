@@ -30,7 +30,6 @@
     [center addObserver:self selector:@selector(keyboardWillAppear:) name:UIKeyboardWillShowNotification object:nil];
     [center addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     
-    
     self.timeButton.imageView.contentMode = UIViewContentModeScaleAspectFill;
     self.canShowDatePicker = NO;
 }
@@ -65,9 +64,8 @@
 - (BOOL)canBecomeFirstResponder{
     
     
-    NSLog(@"textField is first responder:%d",self.missonTextField.isFirstResponder);
-    
-    NSLog(@"self.isFirstResponder:%d",self.isFirstResponder);
+    //NSLog(@"textField is first responder:%d",self.missonTextField.isFirstResponder);
+    //NSLog(@"self.isFirstResponder:%d",self.isFirstResponder);
     if (self.missonTextField.isFirstResponder) {
         return NO;
     }
@@ -87,8 +85,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
     return true;
@@ -100,7 +96,7 @@
         return;
     }
     
-    //NSLog(@"userInfo:%@",note.userInfo);
+    NSLog(@"userInfo:%@",note.userInfo);
     NSValue *endFrameValue = note.userInfo[UIKeyboardFrameEndUserInfoKey];
     CGRect endFrame = [endFrameValue CGRectValue];
     
@@ -111,7 +107,7 @@
     CGFloat textFieldOffset = currentViewMaxY - CGRectGetMaxY(textFieldViewFrame);
     
     CGFloat offset = keyboardMaxY - currentViewMaxY - textFieldOffset;
-    
+
 //    CGRect newTargetFrame = CGRectOffset(self.view.frame, 0, offset);
 //    self.view.frame = newTargetFrame;
     
@@ -137,9 +133,6 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-
-
 - (void) done:(id)sender{
     self.countDownDuration = [self.datePicker countDownDuration];
     [self resignFirstResponder];
@@ -163,20 +156,22 @@
     
     
     if ([name isEqualToString:@""]) {
-        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"" message:@"set as FOCUS MODE?" preferredStyle: UIAlertControllerStyleAlert];
+        /*UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"" message:@"You haven't set anything" preferredStyle: UIAlertControllerStyleAlert];
         [alert addAction: [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
-        [self presentViewController:alert animated:YES completion:nil];
-//
-//        alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
-//        presentViewController(alert, animated: true, completion: nil)
-    }
-    else {
-        // do save
+        [self presentViewController:alert animated:YES completion:nil];*/
         AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
         NSManagedObjectContext *context = [appDelegate managedObjectContext];
-        // 取得 Context
-        // var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        // var context = appDelegate.managedObjectContext!
+        
+        MissionItem* missionItem = [NSEntityDescription insertNewObjectForEntityForName:@"MissionItem" inManagedObjectContext:context];
+        missionItem.mission = @"FOCUS MODE";
+        [appDelegate saveContext];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"" message:@"Set as FOCUS MODE." preferredStyle: UIAlertControllerStyleAlert];
+        [alert addAction: [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    else {
+        AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+        NSManagedObjectContext *context = [appDelegate managedObjectContext];
         
         MissionItem* missionItem = [NSEntityDescription insertNewObjectForEntityForName:@"MissionItem" inManagedObjectContext:context];
         missionItem.mission = name;
@@ -184,7 +179,6 @@
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"" message:@"START!" preferredStyle: UIAlertControllerStyleAlert];
         [alert addAction: [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil]];
         [self presentViewController:alert animated:YES completion:nil];
-        
         
     }
     

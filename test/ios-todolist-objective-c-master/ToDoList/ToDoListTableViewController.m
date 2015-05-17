@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.allowsMultipleSelectionDuringEditing = NO;
-    
     self.toDoItems = [[NSMutableArray alloc] init];
 
     [self reloadToDoItems];
@@ -85,11 +84,12 @@
     return YES;
 }
 */
-
+/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     // this method has to be overridden to make editing work
 }
+*/
 
 /*
 // Override to support rearranging the table view.

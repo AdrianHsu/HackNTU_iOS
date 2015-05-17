@@ -7,8 +7,12 @@
 //
 
 #import "TableViewController.h"
+#import "AppDelegate.h"
+#import <CoreData/CoreData.h>
 
-@interface TableViewController ()
+@interface TableViewController() <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) NSArray *dataSource;
 
 @end
 
@@ -33,5 +37,29 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void) loadData {
+    
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    // 建立查詢目標
+    NSFetchRequest* fetch = [NSFetchRequest fetchRequestWithEntityName:@"MissionItem"];
+    
+    // 執行查詢
+    NSError* error = [[NSError alloc] init];
+    NSPersistentStoreResult* result =  [context executeRequest:fetch error: &error];
+
+//    NSPersistentStoreResult* result = request;
+    if(!result) {
+        self.dataSource = (NSArray *) result;
+        [self.tableView reloadData];
+    }
+    
+    // 將查詢結果 存入 data source
+//    if let result = request {
+//        self.dataSource = result
+//        self.tableView.reloadData()
+}
 
 @end

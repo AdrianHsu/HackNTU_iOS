@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7FD10DFE1B0229A400CAED8D"
-               BuildableName = "instaCamera.app"
-               BlueprintName = "instaCamera"
-               ReferencedContainer = "container:instaCamera.xcodeproj">
+               BlueprintIdentifier = "50ABD1BB1B0834F6002DDE65"
+               BuildableName = "DatePickerTimer.app"
+               BlueprintName = "DatePickerTimer"
+               ReferencedContainer = "container:DatePickerTimer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7FD10E161B0229A400CAED8D"
-               BuildableName = "instaCameraTests.xctest"
-               BlueprintName = "instaCameraTests"
-               ReferencedContainer = "container:instaCamera.xcodeproj">
+               BlueprintIdentifier = "50ABD1D01B0834F6002DDE65"
+               BuildableName = "DatePickerTimerTests.xctest"
+               BlueprintName = "DatePickerTimerTests"
+               ReferencedContainer = "container:DatePickerTimer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7FD10E161B0229A400CAED8D"
-               BuildableName = "instaCameraTests.xctest"
-               BlueprintName = "instaCameraTests"
-               ReferencedContainer = "container:instaCamera.xcodeproj">
+               BlueprintIdentifier = "50ABD1D01B0834F6002DDE65"
+               BuildableName = "DatePickerTimerTests.xctest"
+               BlueprintName = "DatePickerTimerTests"
+               ReferencedContainer = "container:DatePickerTimer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7FD10DFE1B0229A400CAED8D"
-            BuildableName = "instaCamera.app"
-            BlueprintName = "instaCamera"
-            ReferencedContainer = "container:instaCamera.xcodeproj">
+            BlueprintIdentifier = "50ABD1BB1B0834F6002DDE65"
+            BuildableName = "DatePickerTimer.app"
+            BlueprintName = "DatePickerTimer"
+            ReferencedContainer = "container:DatePickerTimer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7FD10DFE1B0229A400CAED8D"
-            BuildableName = "instaCamera.app"
-            BlueprintName = "instaCamera"
-            ReferencedContainer = "container:instaCamera.xcodeproj">
+            BlueprintIdentifier = "50ABD1BB1B0834F6002DDE65"
+            BuildableName = "DatePickerTimer.app"
+            BlueprintName = "DatePickerTimer"
+            ReferencedContainer = "container:DatePickerTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7FD10DFE1B0229A400CAED8D"
-            BuildableName = "instaCamera.app"
-            BlueprintName = "instaCamera"
-            ReferencedContainer = "container:instaCamera.xcodeproj">
+            BlueprintIdentifier = "50ABD1BB1B0834F6002DDE65"
+            BuildableName = "DatePickerTimer.app"
+            BlueprintName = "DatePickerTimer"
+            ReferencedContainer = "container:DatePickerTimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

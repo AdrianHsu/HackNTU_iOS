@@ -10,7 +10,8 @@
 		7F2566421B0832F8002512FC /* IMG_4673.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F2566411B0832F8002512FC /* IMG_4673.jpg */; };
 		7F2566451B0838D3002512FC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2566441B0838D3002512FC /* LoginViewController.m */; };
 		7F2566581B0851B4002512FC /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2566571B0851B4002512FC /* image.xcassets */; };
-		7F64765E1AFE0B0100A44671 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F64765D1AFE0B0100A44671 /* main.m */; };
+		7F25665B1B085725002512FC /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F25665A1B085725002512FC /* ProfileViewController.m */; };
+		7F25665D1B085996002512FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F25665C1B085996002512FC /* main.m */; };
 		7F6476611AFE0B0100A44671 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6476601AFE0B0100A44671 /* AppDelegate.m */; };
 		7F6476641AFE0B0100A44671 /* Utime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F6476621AFE0B0100A44671 /* Utime.xcdatamodeld */; };
 		7F6476671AFE0B0100A44671 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6476661AFE0B0100A44671 /* ViewController.m */; };
@@ -37,9 +38,11 @@
 		7F2566431B0838D3002512FC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7F2566441B0838D3002512FC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7F2566571B0851B4002512FC /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		7F2566591B085725002512FC /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		7F25665A1B085725002512FC /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		7F25665C1B085996002512FC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7F6476581AFE0B0100A44671 /* Utime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F64765C1AFE0B0100A44671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F64765D1AFE0B0100A44671 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7F64765F1AFE0B0100A44671 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7F6476601AFE0B0100A44671 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7F6476631AFE0B0100A44671 /* Utime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Utime.xcdatamodel; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				7F6476661AFE0B0100A44671 /* ViewController.m */,
 				7F2566571B0851B4002512FC /* image.xcassets */,
 				7F6476681AFE0B0100A44671 /* Main.storyboard */,
+				7F2566591B085725002512FC /* ProfileViewController.h */,
+				7F25665A1B085725002512FC /* ProfileViewController.m */,
 				7F64766D1AFE0B0100A44671 /* LaunchScreen.xib */,
 				7F6476621AFE0B0100A44671 /* Utime.xcdatamodeld */,
 				7F2566411B0832F8002512FC /* IMG_4673.jpg */,
@@ -116,11 +121,11 @@
 		7F64765B1AFE0B0100A44671 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F25665C1B085996002512FC /* main.m */,
 				7F64768A1AFE0C0D00A44671 /* FBSDKCoreKit.framework */,
 				7F64768B1AFE0C0D00A44671 /* FBSDKLoginKit.framework */,
 				7F64768C1AFE0C0D00A44671 /* FBSDKShareKit.framework */,
 				7F64765C1AFE0B0100A44671 /* Info.plist */,
-				7F64765D1AFE0B0100A44671 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,9 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F6476611AFE0B0100A44671 /* AppDelegate.m in Sources */,
-				7F64765E1AFE0B0100A44671 /* main.m in Sources */,
 				7F6476671AFE0B0100A44671 /* ViewController.m in Sources */,
 				7F6476641AFE0B0100A44671 /* Utime.xcdatamodeld in Sources */,
+				7F25665B1B085725002512FC /* ProfileViewController.m in Sources */,
+				7F25665D1B085996002512FC /* main.m in Sources */,
 				7F2566451B0838D3002512FC /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

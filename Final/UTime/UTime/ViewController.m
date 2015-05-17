@@ -11,7 +11,7 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface SimpleTableViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+@interface SimpleTableViewController : UIViewController
 
 @end
 
@@ -25,10 +25,6 @@
     //CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
     
     [self.view addSubview:loginButton];
-}
-
-- (IBAction)buttonPress:(id)sender {
-    self.label.text = @"adrian hsu";
 }
 
 - (void)didReceiveMemoryWarning {

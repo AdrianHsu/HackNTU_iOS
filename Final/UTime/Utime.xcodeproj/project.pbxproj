@@ -102,8 +102,8 @@
 			children = (
 				7F64765F1AFE0B0100A44671 /* AppDelegate.h */,
 				7F6476601AFE0B0100A44671 /* AppDelegate.m */,
-				7F6476651AFE0B0100A44671 /* ViewController.h */,
 				7F6476661AFE0B0100A44671 /* ViewController.m */,
+				7F6476651AFE0B0100A44671 /* ViewController.h */,
 				7F2566571B0851B4002512FC /* image.xcassets */,
 				7F6476681AFE0B0100A44671 /* Main.storyboard */,
 				7F2566591B085725002512FC /* ProfileViewController.h */,

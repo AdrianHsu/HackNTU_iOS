@@ -10,7 +10,13 @@
 
 @interface ProfileViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *missonTextField;
+@property (nonatomic, strong) UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UIButton *timeButton;
+
+
 - (IBAction)SetTime:(id)sender;
 - (IBAction)StartCountown:(id)sender;
+- (IBAction)setMission:(id)sender;
 
 @end

@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MissionItem.h"
 
 @interface ProfileViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *missonTextField;
 @property (nonatomic, strong) UIDatePicker *datePicker;
 @property (weak, nonatomic) IBOutlet UIButton *timeButton;
-
+@property (weak, nonatomic) MissionItem *missionItem;
 
 - (IBAction)setTime:(id)sender;
 - (IBAction)startCountown:(id)sender;

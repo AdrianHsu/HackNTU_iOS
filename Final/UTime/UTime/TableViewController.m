@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "AppDelegate.h"
+#import "ProfileViewController.h"
 #import <CoreData/CoreData.h>
 #import "MissionItem.h"
 
@@ -72,14 +73,14 @@
     
 }
 
-/*-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"toEdit"])
     {
-        EditViewController *editViewController = [segue destinationViewController];
-        MissionItem missionItem = [editViewController missionItem];
+        ProfileViewController *profileViewController = (ProfileViewController *)[segue destinationViewController];
+        profileViewController.missionItem = (MissionItem *)sender;
     }
-}*/
+}
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -102,7 +103,7 @@
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
     return true;
 }
-/*-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if(editingStyle == UITableViewCellEditingStyleDelete)
     {
@@ -113,13 +114,13 @@
         [context deleteObject: missionItem];
         [appDelegate saveContext];
     }
-}*/
+}
 
 // /MARK: - UITableViewDelegate
 
-/*-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MissionItem *missionItem = (MissionItem *)self.dataSource[indexPath.row];
-    performSegueWithIdentifier("toEdit", sender: missionItem)
-}*/
+    [self performSegueWithIdentifier:@"toEdit" sender:missionItem];
+}
 @end
